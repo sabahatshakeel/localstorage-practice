@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<!-- DOMAIN NAME -->
+<!-- first-ecommerce.surge.sh -->
+
+<body>
+    
+    <nav>
+        <div class="left-nav">
+            <h1 class="heading">Saylani</h1>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact/contact.html">Contact us</a></li>
+                <li><a href="../products/product.html">Products</a></li>
+                <!-- <li><a href="/about">About</a></li> -->
+                <button id="login"><a href="../form.html">Login</a></button>
+                <button id="logout" onclick="logout_fun()">
+                    Logout
+                </button>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>Our Products</h1>
+        <div class="main">
+            <div class="filter_box">
+                <h2>Category</h2>
+    
+                <div class="category_list">
+    
+                    <!-- <label for="">
+                        <input type="checkbox" name="" id=""> Mens
+                    </label> -->
+    
+                </div>
+    
+            </div>
+            <div class="product">
+                <!-- <div class="produt_items">
+        <img src="Lili.jpg" alt="">
+        <p>Price Rs. 109.95 | 3.9</p>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, dicta.</h3>
+    </div> -->
+    
+    
+    
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+    <script src="../script.js"></script>
+    <script src="./product.js"></script>
+
+    <script>
+            function logout_fun(){
+  localStorage.removeItem('email')
+  localStorage.removeItem('password')
+  window.location.href = '../form.html'
+
+}
+    </script>
+    
+</body>
+</html>
