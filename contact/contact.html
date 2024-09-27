@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <!-- Navbar (login and logout)
+footer
+Home page 
+products page 
+contact us page -->
+
+
+    <nav>
+        <div class="left-nav">
+            <h1 class="heading">Saylani</h1>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../contact/contact.html">Contact us</a></li>
+                <li><a href="../products/product.html">Product</a></li>
+                <button id="login"><a href="../form.html">Login</a></button>
+                <button id="logout" onclick="logout_fun()">
+                    Logout
+                    <!-- <a href="./form.html">Logout</a> -->
+                </button>
+            </ul>
+        </div>
+    </nav>
+    <!-- <h1>Contact Us</h1> -->
+    <div class="form-container"  style="min-height: 75vh;">
+        <div class="contact-form">
+                <h1>Contact Us</h1>
+                <label for="name"> YOUR NAME</label>
+               <div style="display: flex; gap: 60px;">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+               </div>
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" placeholder="Email Address" id="email">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                <label for="message">MESSAGE</label>
+                <textarea name="" id="message" rows="40" placeholder="Please enter your comment...."></textarea>
+                <button id="submitBtn" onclick="submitData()"><a href="./contact.html">Submit</a></button>
+            </div>
+     </div>
+
+     <footer>
+        <p>&copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="../script.js"></script>
+    <script>
+   
+    </script>
+    
+</body>
+</html>
